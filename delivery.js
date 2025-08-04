@@ -1,11 +1,5 @@
 function was_package_received_yesterday(tz_from, tz_to, start, duration) {
-  let sendTime = start - tz_from;
-  let arrivalTime = sendTime + duration;
-  let receivingTime = arrivalTime + tz_to;
-  if (receivingTime < 0) {
-    return true;
-  }
-  return false;
+  return start + duration + (tz_to - tz_from) < 0;
 }
 
 // This kata explores simplified time zones
