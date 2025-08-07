@@ -4,3 +4,4 @@ function doubleChar(str) {
       result.push(str[i].repeat(2));
   }
   return result.join('');
+}
