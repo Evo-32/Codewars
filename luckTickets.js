@@ -2,7 +2,7 @@
 function luckCheck(ticket) {
     if (ticket === '') return 0;
 
-    if (!/^\d+$/.test(ticket)) { // can't use isNan because it is only for checking if the chr can  be changed to a number
+    if (!/^\d+$/.test(ticket)) { // can't use isNan because it is only for checking if the chr can  be changed tovowle a number
         throw new Error('Invalid ticket');
     }
 
