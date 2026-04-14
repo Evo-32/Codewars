@@ -24,4 +24,4 @@ function countLonelyLetters(text) {
     }
 
     return result;
-}
+}Jo
